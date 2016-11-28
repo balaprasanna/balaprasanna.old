@@ -3,33 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Bala's blogs</title>
+    <style>
+      pre {
+          font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+          margin-bottom: 10px;
+          overflow: auto;
+          width: auto;
+          padding: 5px;
+          background-color: #eee;
+          width: 650px!ie7;
+          padding-bottom: 20px!ie7;
+          max-height: 600px;
+      }
+    </style>
+
   </head>
   <body>
 
 <div class="chapter1">
     <div class="sec1">
+      <pre>
+        package main
 
-      package main
+        import "fmt"
+        import "math"
 
-      import "fmt"
-      import "math"
+        func main() {
+        	fmt.Printf("hello, world\n")
+        	fmt.Printf("new line added\n")
+        	fmt.Println(" result =", math.Float32bits(100))
 
-      func main() {
-      	fmt.Printf("hello, world\n")
-      	fmt.Printf("new line added\n")
-      	fmt.Println(" result =", math.Float32bits(100))
+        	fmt.Println("go" + "lang")
 
-      	fmt.Println("go" + "lang")
+        	fmt.Println("1+1", 1+1)
+        	fmt.Println("7.0/3.0 =", 7.0/3.0)
 
-      	fmt.Println("1+1", 1+1)
-      	fmt.Println("7.0/3.0 =", 7.0/3.0)
+        	fmt.Println(true && false)
+        	fmt.Println(true || false)
+        	fmt.Printf("%t \n", !true)
 
-      	fmt.Println(true && false)
-      	fmt.Println(true || false)
-      	fmt.Printf("%t \n", !true)
-
-      }
-
+        }
+      </pre>
     </div>
 </div>
   </body>
